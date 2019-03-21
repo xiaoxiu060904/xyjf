@@ -34,27 +34,27 @@ management:
         allowed-methods: /*
         allowed-origins: /*
 # eureka
-eureka:
-  instance:
-    hostname: xiaoqiang
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}  # 在2.0以上的版本需要instance-id: ${spring.cloud.client.ip-address}:${server.port}
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://10.114.24.203:8081/eureka/,http://10.114.24.204:8081/eureka/,http://10.114.24.207:8081/eureka/
-    registry-fetch-interval-seconds: 30
-    eureka-service-url-poll-interval-seconds: 10
-ribbon:
-  MaxAutoRetriesNextServer: -1
-feign:
-  okhttp:
-    enabled: true
-  compression:
-    request:
-      enabled: true # You may consider enabling the request or response GZIP compression for your Feign requests. You can do this by enabling one of the properties:
-    response:
-      enabled: true
+#eureka:
+#  instance:
+#    hostname: xiaoqiang
+#    prefer-ip-address: true
+#    instance-id: ${spring.cloud.client.ip-address}:${server.port}  # 在2.0以上的版本需要instance-id: ${spring.cloud.client.ip-address}:${server.port}
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://10.114.24.203:8081/eureka/,http://10.114.24.204:8081/eureka/,http://10.114.24.207:8081/eureka/
+#    registry-fetch-interval-seconds: 30
+#    eureka-service-url-poll-interval-seconds: 10
+#ribbon:
+#  MaxAutoRetriesNextServer: -1
+#feign:
+#  okhttp:
+#    enabled: true
+#  compression:
+#    request:
+#      enabled: true # You may consider enabling the request or response GZIP compression for your Feign requests. You can do this by enabling one of the properties:
+#    response:
+#      enabled: true
 
 # datasource
