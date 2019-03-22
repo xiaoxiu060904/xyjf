@@ -1,5 +1,5 @@
 server:
-  port: 8891
+  port: 8890
   undertow:
     io-threads: 16
     worker-threads: 1000
