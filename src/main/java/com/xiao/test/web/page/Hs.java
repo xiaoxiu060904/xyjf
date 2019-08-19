@@ -17,6 +17,6 @@ public class Hs {
     @PostMapping("/hs")
     @ApiOperation("健康页")
     public String hs() {
-        return "OK";
+        return "OK1";
     }
 }
